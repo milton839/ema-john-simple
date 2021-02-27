@@ -1,0 +1,25 @@
+.product{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #D3D3D3;
+    margin-right: 10px;
+    padding-bottom: 20px;
+}
+.product_image{
+    margin-right: 20px;
+}
+.product_details h2{
+    font-size: 25px;
+    color: #0000FF;
+    font-weight: 500;
+}
+.product_button{
+    background-color: #F0C14B;
+    border-radius: 5px;
+    border: 1px solid #846A29;
+    padding: 7px 70px;
+    cursor: pointer;
+
+}
