@@ -1,0 +1,22 @@
+.cart_details{
+    width: 500px;
+    text-align:center;
+}
+.cart_item{
+    margin-top: 10px;
+    border: 5px solid lightgray;
+    border-radius:10px;
+}
+.cart_details h1{
+    color: darkblue;
+    border-bottom: 2px solid gray;
+    display: inline-block;
+}
+.cart_details h2{
+    color: goldenrod;
+    text-align: left;
+    padding-left: 60px;
+}
+.product_color{
+    color:black;
+}

@@ -1,4 +1,6 @@
 import React from 'react';
+import './Cart.css';
+import CartProduct from '../CartProduct/CartProduct';
 
 const Cart = (props) => {
     const cart = props.cart;
@@ -26,13 +28,19 @@ const Cart = (props) => {
         return Number(precision);
     }
     return (
-        <div>
-            <h4>Order Summary</h4>
-            <p>Items Ordered: {cart.length}</p>
-            <p>Product Price: {formatNumber(total)}</p>
-            <p>Shipping Cost: {shipping}</p>
-            <p>Tax + Vat: {formatNumber(tax)}</p>
-            <p>Total Price: {grandTotal}</p>
+        <div className="cart_details">
+            <div className="cart_item">
+                <h1>Product Order Summary</h1>
+                <h2>Items Ordered: <span className="product_color">${cart.length}</span></h2>
+                <h2>Product Price: <span className="product_color">${formatNumber(total)}</span></h2>
+                <h2>Shipping Cost: <span className="product_color">${shipping}</span></h2>
+                <h2>Tax + Vat: <span className="product_color">${formatNumber(tax)}</span></h2>
+                <h2>Total Price: <span className="product_color">${grandTotal}</span></h2>
+            </div>
+            <h1>Cart Product Details</h1>
+            {
+                cart.map(cartProduct =><CartProduct cartProduct={cartProduct}></CartProduct>)
+            }
         </div>
     );
 };

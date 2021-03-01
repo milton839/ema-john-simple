@@ -1,0 +1,17 @@
+.cart_product_item_details{
+    margin-top: 20px;
+    display:flex;
+    border: 5px solid lightgray;
+    border-radius:10px;
+    padding: 20px;
+}
+.cart_product_details h2,h3{
+    color: darkblue;
+}
+
+span{
+    color: goldenrod;
+}
+.cart_product_image img{
+    height: 100px;
+}
